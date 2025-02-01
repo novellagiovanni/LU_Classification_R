@@ -9,3 +9,6 @@ The land use classification was implemented using random forest machine learning
 5. Built-up
 6. Bare land
 
+The 1st step is to extract the NDVI, NDWI, and NDBI from Landsat 8 in the study area.
+The 2nd step is to stacking to all the .tiff files into a single .tiff file which is involve the use of bands from band 2 to band 7, NDVI, NDWI, and NDBI.
+Then the stacked file will be used to predict 6 land use classes using random forest algorithm.
